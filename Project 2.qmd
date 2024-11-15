@@ -1,0 +1,35 @@
+---
+title: "Project 2"
+---
+
+## Part 2
+
+In this part, my partner and I  will use the `rvest` package to scrape data from a website, wrangle and analyze the data, and summarize our findings.
+
+1. Choose a website to scrape. Select a website with structured data in HTML tables or well-defined sections.
+
+```{r}
+library(rvest)
+URL <- "https://worldpopulationreview.com/"
+# URL <- "https://en.wikipedia.org/wiki/World_population"
+w <- read_html(URL)
+# class(w)
+t <- html_elements(w, "table")
+data <- html_table(t)[[1]]
+
+
+```
+
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
